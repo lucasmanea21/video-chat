@@ -51,7 +51,7 @@ const Options = ({children}) => {
                             <Typography gutterBottom variant='h6'> Account Info </Typography>
                             <TextField label='Name' value={name} onChange={(e) => setName(e.target.value)} fullWidth/>
                             <CopyToClipboard text={me} className={classes.margin}>
-                                <Button variant='contained' color='primary' fullWidth startIcon={<Assignment  fontSize='large'/>}>
+                                <Button variant='contained' color='#00a2ff' fullWidth startIcon={<Assignment  fontSize='large'/>}>
                                     Copy Your ID
                                 </Button>
                             </CopyToClipboard>
@@ -64,7 +64,7 @@ const Options = ({children}) => {
                                     Hang Up
                                 </Button>
                             ) : (
-                                <Button variant='contained' color='primary'  startIcon={<Phone fontSize='large'/>} fullWidth onClick={() => callUser(idToCall)} className={classes.margin}>
+                                <Button variant='contained' color='#00a2ff'  startIcon={<Phone fontSize='large'/>} fullWidth onClick={() => callUser(idToCall)} className={classes.margin}>
                                     Call
                                 </Button>
                             )
